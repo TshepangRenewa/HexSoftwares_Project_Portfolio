@@ -54,10 +54,10 @@ header {
   text-decoration: none;
 }
 
- li:hover { gap: 30px;
+li:hover {
+  gap: 30px;
   transition: 0.5s;
   transform: scale(1.1);
-  
 }
 .navbar .menu li a {
   color: variables.$main-text-color;
@@ -73,8 +73,12 @@ header {
   text-decoration: none;
 }
 .navbar.scrolled {
-  background-color: variables.$main-bg-color;
-  padding: 0.7rem 1.5rem;
+  // Just un-comment the css synatx: ⬇️ and remove the one i made to go back to your effect
+  // background-color variables.$main-bg-color;
+  // padding: 0.7rem 1.5rem;
+
+  
+  transition: background-color variables.$main-bg-color 0.5s, padding 0.5 ease;
 }
 
 .navbar.scrolled .menu {

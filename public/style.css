@@ -50,7 +50,7 @@ header .navbar .menu {
   text-decoration: none;
 }
 
-li:hover {
+li:hover a {
   gap: 30px;
   transition: 0.5s;
   transform: scale(1.1);
@@ -71,8 +71,7 @@ li:hover {
 }
 
 .navbar.scrolled {
-  background-color: hsl(0, 0%, 16%);
-  padding: 0.7rem 1.5rem;
+  transition: background-color hsl(0, 0%, 16%) 0.5s, padding 0.5 ease;
 }
 
 .navbar.scrolled .menu {
